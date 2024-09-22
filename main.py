@@ -1,4 +1,4 @@
-import os, requests, time, crayons
+import os, requests, time, crayons, json
 
 def print_banner():
     print(crayons.blue('██     ██ ██ ███    ██ ███████ ███    ██ ██ ██████  '))
@@ -59,12 +59,16 @@ class MoonBix:
     def game_data(self):
         try:
             while True:
-                response = requests.post('https://vemid42929.pythonanywhere.com/api/v1/moonbix/play', json=self.game_response).json()
+                responses = requests.post('https://vemid42929.pythonanywhere.com/api/v1/moonbix/play', json=self.game_response).text
+                try:
+                    response = json.loads(responses)
+                except json.JSONDecodeError:
+                    continue
                 if response['message'] == 'success' and response['game']['log'] >= 100:
                     self.game = response['game']
                     return True
         except Exception as e: 
-            print(crayons.red(f"Error get gamedata: {e}")) 
+            print(crayons.red(f"Error get gamedata: {e}"))
 
     def complete_game(self):
         try:
