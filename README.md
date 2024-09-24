@@ -47,12 +47,15 @@ python3 main.py
 
 5.)  edit file data.txt lalu isi aja query 
 
+6.)click aja file yang namanya ```moonbix.bat``` untuk run bot
 
 ***TERMUX**
+
 4.) di GRUP WINSNIP ae bg
+
 5.) neh linknya https://t.me/winsnip
 
-6.)click aja file yang namanya ```moonbix.bat``` untuk run bot
+
 
 
 ***DONASI***
