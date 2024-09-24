@@ -20,7 +20,7 @@ def print_banner():
     print(crayons.blue('██ ███ ██ ██ ██  ██ ██      ██ ██  ██ ██ ██ ██      '))
     print(crayons.blue(' ███ ███  ██ ██   ████ ███████ ██   ████ ██ ██      '))
     print()
-    print("Join our Telegram channel: https://t.me/winsnip")
+    print("gapaham coding makanya join https://t.me/winsnip")
 
 def log(message, level="INFO"):
     levels = {
